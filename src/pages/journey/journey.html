@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Journey</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+        <button ion-item *ngFor="let stage of stages" (click)="stageSelected($event, stage)">
+           {{stage.code}} : {{stage.name}}
+        </button>
+    </ion-list>
+</ion-content>
