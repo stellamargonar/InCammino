@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import {Http, Response} from '@angular/http';
 
 import { NavController, NavParams } from 'ionic-angular';
@@ -12,13 +12,14 @@ import { Stage } from '../../pages/stage/stage'
 export class Journey {
   stages: Array<{}> ;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public http: Http) {
+  constructor(public navCtrl: NavController, public http: Http) {
     this.load()  
   }
 
   stageSelected(event, stage) {
     // move to stage page
-    this.navCtrl.push(Stage, { stage: stage });
+    this.navCtrl.setRoot(Stage, {stage: stage});
+    //this.navCtrl.push(Stage, { stage: stage });
   }
 
   load() {
