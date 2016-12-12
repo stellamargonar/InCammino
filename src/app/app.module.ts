@@ -5,6 +5,7 @@ import { Journey } from '../pages/journey/journey';
 import { Stage } from '../pages/stage/stage';
 import { stageDescription } from '../pages/stageDescription/stageDescription';
 import { stageHospitality } from '../pages/stageHospitality/stageHospitality';
+import { stageMap } from '../pages/stageMap/stageMap';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { stageHospitality } from '../pages/stageHospitality/stageHospitality';
     Journey,
     Stage,
     stageDescription,
-    stageHospitality
+    stageHospitality,
+    stageMap
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -23,7 +25,8 @@ import { stageHospitality } from '../pages/stageHospitality/stageHospitality';
     Journey,
     Stage,
     stageDescription,
-    stageHospitality
+    stageHospitality,
+    stageMap
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
