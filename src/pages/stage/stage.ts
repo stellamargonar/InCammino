@@ -11,10 +11,9 @@ import {stageHospitality} from '../stageHospitality/stageHospitality';
   selector: 'page-stage',
   templateUrl: 'stage.html'
 })
-export class Stage  {
-  @ViewChild('stageTabsNav') nav: NavController;
-  
+export class Stage  {  
   stage : {};
+
   tabDescription;
   tabHospitality;
   

@@ -1,24 +1,8 @@
-<ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>{{stage.name}}</ion-title>
-  </ion-navbar>
-</ion-header>
-
-<!--<ion-content padding class="has-tabs">
-  <h3>{{stage.code}} : {{stage.name}}</h3>
-  <p>{{stage.description}}</p>
-</ion-content>-->
-
-
 <ion-tabs>
   <!-- https://blog.khophi.co/ionic-2-side-menu-tabs/ -->
-  <!-- Indicates with tabsPage should handle each tab here -->
-  <ion-tab [root]="tabDescription" tabTitle="General" tabIcon="cog"></ion-tab>
-  <!--<ion-tab [root]="tabMap" tabTitle="Map" tabIcon="chatbubbles"></ion-tab>-->
-  <ion-tab [root]="tabHospitality" tabTitle="Hospitality" tabIcon="pulse"></ion-tab>
-  <!--<ion-tab [root]="tabJournal" tabTitle="Journal" tabIcon="pulse"></ion-tab>-->
+  <ion-tab [root]="tabDescription" [rootParams]="stage" tabTitle="General" tabIcon="clipboard"></ion-tab>
+  <!--<ion-tab [root]="tabMap" tabTitle="Map" tabIcon="map"></ion-tab>-->
+  <ion-tab [root]="tabHospitality" tabTitle="Hospitality" tabIcon="home"></ion-tab>
+  <!--<ion-tab [root]="tabJournal" tabTitle="Journal" tabIcon="chatbox"></ion-tab>-->
 </ion-tabs>
 

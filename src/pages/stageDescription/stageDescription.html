@@ -1,11 +1,12 @@
-
-<ion-content padding>
-    <h3>1. Welcome to Tab One Description</h3>
-    <p>
-        This starter project for Tabs with Side Menu.
-    </p>
-    <p>
-        Code along and have fun. DESCIRPTION
-    </p>
-
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{stage.name}}</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding class="has-header">
+  <h3>{{stage.code}} : {{stage.name}}</h3>
+  <p>{{stage.description}}</p>
 </ion-content>

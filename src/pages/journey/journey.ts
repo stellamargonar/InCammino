@@ -18,8 +18,8 @@ export class Journey {
 
   stageSelected(event, stage) {
     // move to stage page
-    this.navCtrl.setRoot(Stage, {stage: stage});
-    //this.navCtrl.push(Stage, { stage: stage });
+    //this.navCtrl.setRoot(Stage, {stage: stage});
+    this.navCtrl.push(Stage, { stage: stage });
   }
 
   load() {
