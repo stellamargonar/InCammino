@@ -6,6 +6,8 @@ import { Stage } from '../pages/stage/stage';
 import { stageDescription } from '../pages/stageDescription/stageDescription';
 import { stageHospitality } from '../pages/stageHospitality/stageHospitality';
 import { stageMap } from '../pages/stageMap/stageMap';
+import { ChartsModule } from 'ng2-charts/ng2-charts';
+
 
 @NgModule({
   declarations: [
@@ -17,7 +19,8 @@ import { stageMap } from '../pages/stageMap/stageMap';
     stageMap
   ],
   imports: [
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    ChartsModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [

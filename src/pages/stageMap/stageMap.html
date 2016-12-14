@@ -6,9 +6,21 @@
     <ion-title>{{stage.name}}</ion-title>
   </ion-navbar>
 </ion-header>
-<ion-content padding class="has-header">
-  <h1> Map</h1>  
-    <div style="height: 100%;width:100%;">
-      <div id="map" style="height: 100%; width: 100%;"></div>
-    </div>
+<ion-content class="has-header">
+  <div padding style="display: block;" *ngIf="lineChartData">
+    <canvas baseChart height="150px"
+                [datasets]="lineChartData"
+                [options]="lineChartOptions"
+                [chartType]="'line'"></canvas>
+
+  </div>
+
+  <ul *ngIf="stage.technicalData">
+    <li>Total Distance: {{stage.technicalData.totalLength}}</li>
+    <li>Total Elevation: {{stage.technicalData.dislivello}}</li>
+    <li>Max Elevation: {{stage.technicalData.maxElevation}}</li>
+  </ul>
+  <div style="height: 100px; width:100%;">
+    <div id="map" style="height: 100%; width: 100%;"></div>
+  </div>
 </ion-content>
