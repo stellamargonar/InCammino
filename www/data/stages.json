@@ -1,0 +1,232 @@
+[{
+    "id": 1,
+    "code" : "VFB01",
+    "name": "Dal Gran San Bernardo ad Aosta",
+    "description" : "Dopo aver visitato l'ospizio dove vengono allevati i Campioni di Razza San Bernardo, possiamo pedalare verso il confine. \n Da qui una strada panoramica molto lunga sulla SS27 ci porta fino a valle.  \n Attraversiamo gli incantevoli borghi di Saint Rhemy en Bosses, dove abbandoniamo la strada statale, per proseguire lungo strade secondarie verso Saint Leonard, Saint Oyen, Etroubles. \n Siamo ora sulla sinistra orografica del torrente e attraversiamo degli splendidi frutteti prima di entrare ad Aosta, città ricca di attrattive, soprattutto di epoca romana. \n Punti di ristoro in tutti i centri abitati; fontane frequentissime.",
+    "locationStart" : "Colle del Gran San Bernardo",
+    "locationEnd" : "Aosta, P.zza Chanouz",
+    "totalLength" : "41.5 km",
+    "img" : ["http://www.viafrancigena.bike/static/photologue/photos/2015/1/cache/GranSanBernardo-aosta-bici-via-francigena_bootstrap_res_photo.jpg"],
+    "trackFile" : "gpx/VFB01.gpx"
+},{
+    "id": 2,
+    "code" : "VFB02",
+    "name": "Da Aosta a Verres",
+    "description" : "La discesa della Valle d'Aosta è un percorso che si svolge inizialmemte sulla destra orografica della Dora, dove frequenti sono i tratti di piste ciclabili. All'altezza di Saint-Vincent ci spostiamo sul fianco sinistro della Vallée, impegnandoci in alcune brevi salite con pendenze anche elevate. A Barriaz si torna sulla destra orografica che seguiamo fino a Verres.\nLe attrattive più importanti sono i vigneti e i castelli di Quart, Nus, Cly, Fenis.\nPunti di ristoro a Chambave, Saint Vincent e Montjovet. Fontane lungo tutto il percorso",
+    "locationStart" : "Aosta, P.zza Chanouz",
+    "locationEnd" : "Verrès, stazione ferroviaria",
+    "totalLength" : "49,3 km",
+    "img" : ["http://www.viafrancigena.bike/static/photologue/photos/2015/1/cache/Aosta-Verres-bici-via-francigena_bootstrap_res_photo.jpg"],
+    "trackFile" : "gpx/VFB02.gpx"
+},{
+    "id": 3,
+    "code" : "VFB03",
+    "name": "Da Verres a Roppolo",
+    "description" : "Una tappa ricca di spunti culturali: l'attraversamento del ponte di Bard, delizioso villaggio dominato del forte sede del Museo delle Alpi; e soprattutto l'ingresso a Donnas, lungo la Strada romana delle Gallie.\nEntrando in Piemonte i rilievi si addolciscono, le pendenze e i dislivelli del percorso diventano meno impegnativi. Il percorso alterna borghi caratteristici a piacevoli tratti nella natura. Da non perdere la visita del centro storico di Ivrea.\nSi prosegue ai piedi della Serra di Ivrea, la più grande morena d'Europa, interessante formazione geologica che ci indica la direzione. Molto bello il villaggio-strada di Piverone, e spettacolari i panorami sul lago di Viverone.\nPunti di ristoro a Bard, Donnas, Ivrea, Bollengo, Palazzo Canavese, Piverone. Fontane frequenti",
+    "locationStart" :"Verrex, Stazione Ferroviaria",
+    "locationEnd" : "Roppolo, Municipio",
+    "totalLength" : "TODO",
+    "img" : ["http://www.viafrancigena.bike/static/photologue/photos/2015/1/cache/verres-viverone-bici-via-francigena_bootstrap_res_photo.jpg"],
+    "trackFile" : "gpx/VFB03.gpx"
+},{
+    "id": 4,
+    "code" : "VFB04",
+    "name": "Da Roppolo a Vercelli",
+    "description" : "La maggiore attrattiva della giornata è il Castello di Roppolo, dal quale si gode un bel panorama sull’anfiteatro morenico di Ivrea e sul lago di Viverone e che merita senz'altro una piccola deviazione dal percorso. \nDopo Cavaglià, con una breve deviazione, possiamo visitare il Santuario di Nostra Signora del Babilone e raggiungere Santhià lungo tranquille strade di campagna.\nLa tappa attraversa ora la pianura vercellese fortemente caratterizzata dalle numerose risaie, frequenti gli incontri con diverse specie avicole, attirate nella zona dalla presenza degli specchi d'acqua.\nPunti di ristoro e acqua a Roppolo e Cavaglià e Santhià. Dopo questa località gran parte della tappa si svolge su tratturi e strade campestri, al di fuori dei centri abitati non è possibile rifornirsi d'acqua.",
+    "locationStart" : "Roppolo, Municipio",
+    "locationEnd" : "Vercelli, P.zza Cavour",
+    "totalLength" : "40,4",
+    "img" : ["http://www.viafrancigena.bike/static/photologue/photos/2015/1/cache/viverone-Vercelli-bici-via-francigena_bootstrap_res_photo.jpg"],
+    "trackFile" : "gpx/VFB04.gpx"
+},{
+    "id": 5,
+    "code" : "VFB05",
+    "name": "Da Vercelli a Mortara",
+    "description" : "La prima parte della tappa si sviluppa lungo l'argine del Sesia, tra pioppeti e risaie. Da Palestro una strada provinciale poco trafficata porta fino a Robbio. Notevoli gli spunti di interesse storico-architettonico a Vercelli e Robbio, \nAttraversando la piatta campagna della Lomellina, il percorso ci conduce su larghe strade sterrate nella prima parte e su tratturi erbosi nella zona di Madonna del Campo. \nInteressanti a Robbio il monastero di S. Valeriano e la chiesa di S. Pietro, nei pressi della quale sorgeva un \"Hospicium\" per il ricovero dei pellegrini.\nAl di fuori dei centri abitati non è possibile rifornirsi d'acqua.",
+    "locationStart" : "Vercelli, P.zza Cavour",
+    "locationEnd" : "Mortara, Sant'Albino",
+    "totalLength" : "37,4",
+    "img" : ["http://www.viafrancigena.bike/static/photologue/photos/2015/1/cache/vercelli-mortara-bici-via-francigena_bootstrap_res_photo.jpg"],
+    "trackFile" : "gpx/VFB05.gpx"
+},{
+    "id": 6,
+    "code" : "VFB06",
+    "name": "Da Mortara  a Pavia",
+    "description" : "Dall'abbazia di Sant'Albino, fondata nel V sec. e succesivamente rimaneggiata, ora punto tappa per i pellegrini che transitano da Mortara, un bel percorso tra campi coltivati e cascine, canali irrigui e inattese macchie d'alberi, ci porta a Tromello, tappa dell'itinerario di Sigerico. \n Lungo il percorso incontriamo il Santuario Madonna delle Bozzole e attraversiamo alcuni caratteristici borghi agricoli. Facciamo attenzione al traffico lungo la SP 185. Dopo Zerbolò arriviamo alla confluenza con il Ticino, che lambiamo in alcuni tratti. Le viste sul fiume, unite ad una variegata presenza faunistica, offrono uno spettacolo suggestivo.\n Al di fuori dei centri abitati non è possibile rifornirsi d'acqua, unici punti di ristoro a Tromello e Zerbolò.",
+    "locationStart" : "Mortara, Sant'Albino",
+    "locationEnd" : "Pavia, Ponte coperto",
+    "totalLength" : "42,6",
+    "img" : ["http://www.viafrancigena.bike/static/photologue/photos/2015/1/cache/mortara-Pavia-bici-via-francigena_bootstrap_res_photo.jpg"],
+    "trackFile" : "gpx/VFB06.gpx"
+},{
+    "id": 7,
+    "code" : "VFB07",
+    "name": "Da Pavia a Orio Litta",
+    "description" : "La tappa attraversa la pianura alluvionale del Basso Pavese, dove incontriamo i caratteristici terrazzi fluviali in prossimità di S. Lazzaro e Belgioioso. Interessanti le testimonianze architettoniche presenti sul percorso, rappresentate soprattutto da edifici religiosi: dalla maestosa facciata di S. Michele a Pavia, alla piccola chiesa di S. Giacomo e dal castello di Belgioioso. \nIl percorso segue quindi l'argine maestro del Po fino all'attraversamento del Lambro, dove si entra in territorio Lodigiano e Orio Litta, dove ci attende la gradevole ospitalità della Grangia benedettina.\nAl di fuori dei centri abitati non è possibile rifornirsi d'acqua.",
+    "locationStart" : "Pavia, Ponte Coperto",
+    "locationEnd" : "Orio Litta, Grangia Benedettina",
+    "totalLength" : "51,6",
+    "img" : ["http://www.viafrancigena.bike/static/photologue/photos/2015/1/cache/pavia-orio-litta-bici-via-francigena_bootstrap_res_photo.jpg"],
+    "trackFile" : "gpx/VFB07.gpx"
+},{
+    "id": 8,
+    "code" : "VFB08",
+    "name": "Da Orio Litta a Fiorenzuola",
+    "description" : "Lasciata Orio Litta si giunge in breve al Guado di Sigerico, il \"Transitum Padi\", dove i pellegrini a piedi traghettano sull'altra sponda. Il percorso ciclistico segue invece l'argine del Po lungo tratti di ciclabile fino a San Rocco al Porto e Piacenza.\nDopo un breve tratto lungo la Via Emilia arriviamo a Pontenure, attraversiamo le campagne piacentine fino al suggestivo il Castello di Paderna, quindi strade poco trafficate portano a Fiorenzuola d'Arda.\nAl di fuori dei centri abitati non è possibile rifornirsi d'acqua. Bar e acqua a Pontenure, acqua a Castello di Paderna.",
+    "locationStart" : "Orio Litta, Grangia Benedettina",
+    "locationEnd" : "Fiorenzuola d'Arda",
+    "totalLength" : "56,9",
+    "img" : ["http://www.viafrancigena.bike/static/photologue/photos/2015/1/cache/orio-litta-fiorenzuola_bootstrap_res_photo.jpg"],
+    "trackFile" : "gpx/VFB08.gpx"
+},{
+    "id": 9,
+    "code" : "VFB09",
+    "name": "Da Fiorenzuola a Fornovo",
+    "description" : "L'ultima tratto di pianura ci offre l'opportunità di ammirare due edifici religiosi di grande interesse: l'Abbazia Cistercense di Chiaravalle della Colomba, con il suggestivo Chiostro, e il Duomo di Fidenza, pregevole esempio di romanico lombardo dedicato a San Donnino.\nIl percorso collinare ci regala i primi panorami e alcuni spunti di interesse paesaggistico, dopo Medesano, nell'ultima parte del percorso, si lambisce il Parco Fluviale del Taro. \nAl di fuori dei centri abitati non è possibile rifornirsi di acqua.",
+    "locationStart" : "Fiorenzuola d'Arda",
+    "locationEnd" : "Fornovo, Duomo",
+    "totalLength" : "51,6",
+    "img" : ["http://www.viafrancigena.bike/static/photologue/photos/2015/1/cache/fiorenzuola-fornovo-bici-via-francigena_bootstrap_res_photo.jpg"],
+    "trackFile" : "gpx/VFB09.gpx"
+},{
+    "id": 10,
+    "code" : "VFB10",
+    "name": "Da Fornovo a Berceto",
+    "description" : "Subito dopo Fornovo, si percorre un lungo tratto di provinciale della Val Sporzana per portarsi ai piedi di Bardone e Terenzo, due piccoli borghi caratterizzati dalle bellissime Pievi. Da qui arriviamo alla SS 62 della Cisa che seguiamo fino a Cassio e Berceto, con il Duomo di S. Moderanno.\nAl di fuori dei centri abitati non è possibile approvvigionarsi d'acqua.",
+    "locationStart" : "Fornovo, Duomo",
+    "locationEnd" : "Berceto, San Moderanno",
+    "totalLength" : "34,3",
+    "img" : ["http://www.viafrancigena.bike/static/photologue/photos/2015/1/cache/fornovo-berceto-bici-via-francigena_bootstrap_res_photo.jpg"],
+    "trackFile" : "gpx/VFB10.gpx"
+},{
+    "id": 11,
+    "code" : "VFB11",
+    "name": "Da Berceto a Aulla",
+    "description" : "Percorriamo la SS 62 fino al Passo della Cisa e, sempre seguendo la Statale, scendiamo fino alle porte dell'affascinante Pontremoli, sorta tra due corsi d'acqua e caratterizzata dal gran numero di ponti.\nRimaniamo sulla destra orografica del fiume Magra fino ad attraversarlo in località Terrarossa, poco prima di entrare ad Aulla.",
+    "locationStart" : "Berceto, San Moderanno",
+    "locationEnd" : "Aulla, Abbazia di S. Caprasio",
+    "totalLength" : "53,7",
+    "img" : ["http://www.viafrancigena.bike/static/photologue/photos/2015/1/cache/berceto-aulla-bici-via-francigena_bootstrap_res_photo.jpg"],
+    "trackFile" : "gpx/VFB11.gpx"
+},{
+    "id": 12,
+    "code" : "VFB12",
+    "name": "Da Aulla a Massa",
+    "description" : "Dopo un breve tratto di SS 63 seguiamo la SP 57  in una lunga e impegnativa salita. Subito dopo Ponzanello proseguiamo sulla SP 9 fino alla bella cittadina di Sarzana. La seconda parte del percorso è pianeggiante; la principale attrattiva è l'area archeologica di Luni, antico porto romano dove i pellegrini francigeni s'imbarcavano verso Santiago. Da Luni si prosegue attraversando Avenza e, dopo una salita, si scende a Massa.\nDiscreta la disponibilità di acqua, punti di ristoro a Sarzana e Caniparola.\nNote: la salita per Ponzanello è molto impegnativa, si consiglia alle persone non allenate di percorrere la prima parte della tappa, fino a Sarzana, in treno.",
+    "locationStart" : "Aulla, Abbazia di S. Caprasio",
+    "locationEnd" : "Massa, Piazza Duomo",
+    "totalLength" : "52,9",
+    "img" : ["http://www.viafrancigena.bike/static/photologue/photos/2015/1/cache/aulla-marina-di-massa-bici-via-francigena_bootstrap_res_photo.jpg"],
+    "trackFile" : "gpx/VFB12.gpx"
+},{
+    "id": 13,
+    "code" : "VFB13",
+    "name": "Da Massa a Lucca",
+    "description" : "Da Massa affrontiamo una impegantiva salita che porta al Castello Aghinolfi di Montignoso, saliamo ancora lungo via Palatina per scendere a Strettoia e da qui arrivare a Pietrasanta, \"la piccola Atene d'Italia\", patria adottiva di artisti provenienti da tutto il mondo. \nDopo la visita al centro storico di Camaiore e all'antica Badia, saliamo verso Monte Magno. Contunuiamo lungo la SP 1 fino a Piazzano, scendiamo nella valle del torrente Contesola e, attraversato il Serchio a Ponte San Pietro, raggiungiamo Lucca lungo la ciclabile del Serchio.\nDiscreta la disponibilità di acqua, punti di ristoro a Camaiore, Monte Magno, Valpromaro, San Macario in Piano.",
+    "totalLength" : "55",
+    "locationStart" : "Massa, Piazza Duomo",
+    "locationEnd" : "Lucca, San Michele",
+    "img" : ["http://www.viafrancigena.bike/static/photologue/photos/2015/1/cache/marina-massa-lucca-bici-via-francigena_bootstrap_res_photo.jpg"],
+    "trackFile" : "gpx/VFB13.gpx"
+},{
+    "id": 14,
+    "code" : "VFB14",
+    "name": "Da Lucca a San Miniato",
+    "description" : "Tappa pianeggiante dove l'interesse maggiore è rappresentato dai numerosi edifici storici e religiosi che s'incontrano lungo il percorso: la cinta muraria e l'anfiteatro di Lucca, la Pieve di Capannori, la Badia di Pozzeveri, la chiesa di S. Jacopo e il centro storico di Altopascio.\nDa Altopascio il percorso ciclabile ricalca quello pedonale fino a Galleno, per poi discostarsene fino a San Miniato. A Ponte a Cappiano all'interno dell'antico ponte mediceo è stato ricavato un ostello. Da qui risaliamo verso l'interessante centro storico di Fucecchio. Superato l’Arno, ne percorriamo l’argine per un breve tratto verso San Miniato.\nFuori dai centri abitati è non è possibile rifornirsi d'acqua. Acqua e punti di ristoro a Chimenti, Galleno, Ponte a Cappiano e Fucecchio.",
+    "totalLength" : "46,1",
+    "locationStart" : "Lucca, San Michele",
+    "locationEnd" : "San Miniato, Duomo",
+    "img" : ["http://www.viafrancigena.bike/static/photologue/photos/2015/1/cache/lucca-SanMiniato-bici-via-francigena_bootstrap_res_photo.jpg"],
+    "trackFile" : "gpx/VFB14.gpx"
+},{
+    "id": 15,
+    "code" : "VFB15",
+    "name": "Da San Miniato a San Gimignano",
+    "description" : "Da San Miniato scendiamo in Val d'Elsa e , con un percorso pianeggiante, arriviamo a Castelfiorentino. Subito dopo inizia la salita che porta alla Pieve a Chianni, Submansiones di Sigerico, nella cui canonica è stato ricavato un bellissimo ostello, e a Gambassi Terme.\nDopo Gambassi saliamo ancora fino ad incrociare la SP 4 Volterrana che imbocchiamo verso San Gimignano, accompagnati dalla straordinaria bellezza dei panorami di questa zona. ",
+    "totalLength" : "41,9",
+    "locationStart" : "San Miniato, Duomo",
+    "locationEnd" : "San Gimignano, Duomo",
+    "img" : ["http://www.viafrancigena.bike/static/photologue/photos/2015/1/cache/san-miniato-SanGimignano-bici-via-francigena_bootstrap_res_photo.jpg"],
+    "trackFile" : "gpx/VFB15.gpx"
+},{
+    "id": 16,
+    "code" : "VFB16",
+    "name": "Da San Gimignano a Siena",
+    "description" : "Usciti da S. Gimignano, dopo un tratto in saliscendi, arriviamo a Poggibonsi. Da qui inizia la salita che ci porta a Colle di Val d'Elsa, Gracciano d'Elsa e a Strove, con la sua bella Pieve romanica. Transitiamo dallo splendido complesso di Abbadia a Isola prima di raggiungere Monteriggioni, con la sua inconfondibile corona di torri.\nLasciatoci alle spalle il centro storico di Monteriggioni, percorriamo le strade bianche della montagnola senese verso Cerbaia, antico borgo medievale oggi in stato di abbandono. Poco prima di arrivare a Cerbaia scendiamo verso la vicina Cassia che percorriamo fino a Siena.\nL’acqua e i punti di ristoro sono disponibili solo presso i centri abitati.",
+    "totalLength" : "50,9",
+    "locationStart" : "Ssan Gimignano, Duomo",
+    "locationEnd" : "Siena, Piazza del Campo",
+    "img" : ["http://www.viafrancigena.bike/static/photologue/photos/2015/1/cache/san-gimignano-Siena-bici-via-francigena_bootstrap_res_photo.jpg"],
+    "trackFile" : "gpx/VFB16.gpx"
+},{
+    "id": 17,
+    "code" : "VFB17",
+    "name": "Da Siena a San Quirico",
+    "description" : "Se percorsa in una bella giornata di sole, questa tappa può diventare indimenticabile grazie ai panorami sconfinati che si godono dai crinali della Val d'Arbia, che vengono percorsi lungo interminabili strade bianche. \nDietro di noi possiamo ammirare il profilo di Siena, adagiata sulle colline all'orizzonte. \nLa Grancia di Cuna, antico granaio fortificato, è la principale attrattiva storica di questo tratto. Dopo la grancia attraversiamo Monteroni d'Arbia e Ponte d'Arbia.\nSuperato Buonconvento, il cui centro storico vale una visita, inizia la salita. Percorriamo la provinciale per Montalcino, che lasciamo per entrare nei panorami da sogno della Val d'Orcia, lungo un percorso per strade bianche che ci porta a Torrenieri. Da qui utilizziamo un tratto della Cassia dismessa, purtroppo ancora asfaltata, per raggiungere San Quirico, che ci accoglie con la sua splendida collegiata. \nPunti di ristoro e acqua solo nei centri abitati.",
+    "totalLength" : "54,1",
+    "locationStart" : "Siena, Piazza del Campo",
+    "locationEnd" : "San quirico d'Orcia, Collegiata",
+    "img" : ["http://www.viafrancigena.bike/static/photologue/photos/2015/1/cache/Siena-san-quirico-bici-via-francigena_bootstrap_res_photo.jpg"],
+    "trackFile" : "gpx/VFB17.gpx"
+},{
+    "id": 18,
+    "code" : "VFB18",
+    "name": "Da San Quirico a Radicofani",
+    "description" : "Pedaliamo nell'incanto dei panorami della Val d'Orcia, e la prima perla della giornata è Vignoni Alto, un villaggio fuori dal tempo che preannuncia Bagno Vignoni, con sua la straordinaria piscina termale in piazza. La visita al centro storico di Castiglione vale la deviazione. Da Bagno Vignoni una strada asfaltata e una lunga salita ci conducono a Radicofani.\nATTENZIONE: il tratto di percorso che unisce San Quirico a Bagno Vignoni comprende una discesa molto ripida su sterrato. Se non avete una buona esperienza su percorsi fuoristrada vi consigliamo di seguire la variante sulla Via Cassia.\nAcqua e punti di ristoro a Bagno Vignoni.",
+    "totalLength" : "36,3",
+    "locationStart" : "San quirico d'Orcia, Collegiata",
+    "locationEnd" : "Radicofani, Chiesa di San Pietro",
+    "img" : ["http://www.viafrancigena.bike/static/photologue/photos/2015/1/cache/san-quirico-Radicofani-bici-via-francigena_bootstrap_res_photo.jpg"],
+    "trackFile" : "gpx/VFB18.gpx"
+},{
+    "id": 19,
+    "code" : "VFB19",
+    "name": "Da Radicofani a Bolsena",
+    "description" : "Da Radicofani si scende verso la Val di Paglia, attraversando un paesaggio meraviglioso: attorno a noi colline a perdita d'occhio e il Monte Amiata, e dietro di noi la Rocca. Ci si immette poi sulla Via Cassia, che va percorsa facendo attenzione al traffico, e la si lascia imboccando prima la strada provinciale per Pitigliano e poi una lunga strada sterrata che porta verso il bellisimo borgo di Proceno. Una breve discesa prima di affrontare l'ultima breve salita verso Acquapendente. \nDopo la visita alla Chiesa del Santo Sepolcro, la cui splendida cripta ricostruisce l'omonima chiesa in Terra Santa, la tappa prosegue senza emozioni fino a San Lorenzo Nuovo, dove possiamo ammirare un bel panorama sul lago di Bolsena. Scesi nel cratere vulcanico, imbocchiamo un piacevole percorso su strade sterrate che ci conduce a Bolsena, in un continuo saliscendi tra uliveti, prati e boschi, con i bei panorami del lago sullo sfondo.\nPunti di ristoro e acqua solo a Proceno, Acquapendente e San Lorenzo Nuovo.",
+    "totalLength" : "55.2",
+    "locationStart" : "Radicofani, Chiesa di San Pietro",
+    "locationEnd" : "Bolsena, P.zza Matteotti",
+    "img" : ["http://www.viafrancigena.bike/static/photologue/photos/2015/1/cache/Radicofani-Bolsena-bici-via-francigena_bootstrap_res_photo.jpg"],
+    "trackFile" : "gpx/VFB19.gpx"
+},{
+    "id": 20,
+    "code" : "VFB20",
+    "name": "Da Bolsena a Viterbo",
+    "description" : "Il percorso si allontana da Bolsena lungo la via Cassia regalando splendide viste sul lago. Abbandoniamo la statale poco prima di Montefiascone a cui arriviamo dopo una lunga salita. Emozionante la vista a 360° che si gode all'arrivo a Montefiascone dalla Torre del Pellegrini.\nIl tratto dopo Montefiascone è spettacolare, sull'antico basolato della via Cassia, ancora in ottime condizioni. Attraversiamo quindi un tratto collinare, con bei panorami su Montefiascone e Viterbo. \nScesi nella piana possiamo rilassarci alle terme del Bagnaccio, una serie di pozze di acqua calda, da sempre frequentate dai pellegrini che transitavano lungo la Via Francigena. Arrivati a Viterbo, da non perdere la visita del centro storico e del quartiere di San Pellegrino.\nAcqua scarsa, punti di ristoro assenti lungo il percorso.",
+    "totalLength" : "32,4",
+    "locationStart" : "Bolsena, Piazza Matteotti",
+    "locationEnd" : "Viterbo, Piazza del Plebiscito",
+    "img" : ["http://www.viafrancigena.bike/static/photologue/photos/2015/1/cache/Bolsena-viterbo-bici-via-francigena_bootstrap_res_photo.jpg"],
+    "trackFile" : "gpx/VFB20.gpx"
+},{
+    "id": 21,
+    "code" : "VFB21",
+    "name": "Da Viterbo a Sutri",
+    "description" : "Il percorso presenta modesti saliscendi tra campi e boschi, prevalentemente su strade asfaltate, fino alla lunga salita che porta ad attraversare Vetralla, Pietrara e Vico Martino. Dopo un tratta pianeggiante inizia una lunga discesa verso il delizioso borgo di Capranica e Sutri, perla semisconosciuta lungo la Francigena, con il suo Anfiteatro scavato nel tufo, il Mitreo e il bel centro storico.\nAcqua e punti di ristoro solo a Vetralla e Capranica.",
+    "totalLength" : "37,9",
+    "locationStart" : "Viterbo, Piazza del Plebiscito",
+    "locationEnd" : "Sutri, Anfiteatro romano",
+    "img" : ["http://www.viafrancigena.bike/static/photologue/photos/2015/1/cache/viterbo-sutri-bici-via-francigena_bootstrap_res_photo.jpg"],
+    "trackFile" : "gpx/.gpx"
+},{
+    "id": 22,
+    "code" : "VFB22",
+    "name": "Da Sutri a Formello",
+    "description" : "La prima parte della tappa attraversa le campagne fino ad arrivare a Monterosi. Riprendiamo il percorso tra i campi, fino alle cascate di Monte Gelato, un'area parco dove possiamo riposare e fare il bagno. Entriamo quindi nel Parco di Veio, e percorriamo una strada sterrata panoramica, che ci conduce a salire fino alle porte di Campagnano.\nUsciamo da Campagnano lungo la Via di Baccano, sempre in ripida salita, prima scendere ed entrare nell'area del Parco di Veio, dove passiamo accanto alla chiesa della Madonna del Sorbo. Attraversiamo quindi la meravigliosa Valle del Sorbo prima di salire verso il bel centro storico di Formello, dove Palazzo Chigi ospita un bellissimo ostello.\nPunti di ristoro e acqua a Monterosi, alle Cascate di Monte Gelato e Campagnano.",
+    "totalLength" : "33,9",
+    "locationStart" : "Sutri, Anfiteatro romano",
+    "locationEnd" : "Formello, centro storico",
+    "img" : ["http://www.viafrancigena.bike/static/photologue/photos/2015/1/cache/sutri-Formello-bici-via-francigena_bootstrap_res_photo.jpg"],
+    "trackFile" : "gpx/VFB22.gpx"
+},{
+    "id": 23,
+    "code" : "VFB23",
+    "name": "Da Formello a Roma",
+    "description" : "L'ultima tappa della Via Francigena inizia con un piacevole percorso nel verde delle campagne laziali, per proseguire per un breve tratto lungo strade secondarie che attraversano la periferia romana prima di arrivare alla bellissima ciclopista del Tevere, che consente di arrivare in sicurezza fino alle porte della Città del Vaticano.",
+    "totalLength" : "34",
+    "locationStart" : "Formello, centro storico",
+    "locationEnd" : "Roma, Piazza San Pietro",
+    "img" : ["http://www.viafrancigena.bike/static/photologue/photos/2015/1/cache/Formello-roma-bici-via-francigena_bootstrap_res_photo.jpg"],
+    "trackFile" : "gpx/VFB23.gpx"
+}
+]

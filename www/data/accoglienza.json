@@ -1,0 +1,20 @@
+[{
+"coordinates" : [45.892781, 7.187542],
+"name" : "Ospizio del Gran San bernardo",
+"type" : "accoglienza religiosa"
+},{
+ "name" : "Casa Don Angelo Carioni",
+ "coordinates"	: [45.861091, 7.159932],
+ "info" : "prodomoimpresasociale.it"
+},{
+    "name" : "Chateau Verdun",
+    "coordinates"	: [45.824028, 7.215379],
+    "info" :"chateauverdun.com"
+},{
+    "name" : "Casa Alpina Sacro Cuore",
+    "coordinates" : [	45.821122, 7.230468	]
+}, {
+    "name" : "Parrocchia Saint Martin",
+    "coordinates"	 : [45.734583, 7.296789],
+    "info" :"parrocchia-stmartin.it"
+}]
