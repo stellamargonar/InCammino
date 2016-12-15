@@ -10,9 +10,7 @@ import * as L from 'leaflet';
 export class stageMap {
 
   stage : any;
-  stagePosition : any;
   private _map: any;
-  private _currentLatLng: any;
   public lineChartData:Array<any> = undefined;
   public lineChartOptions:any = {
     animation: false,
@@ -34,7 +32,11 @@ export class stageMap {
   }
   loadMap() {
     this._map = L.map("map").setView([0,0] ,13);
-    L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}').addTo(this._map);
+    var OpenStreetMap_Mapnik = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    });
+    OpenStreetMap_Mapnik.addTo(this._map);
     
     var gpxLayer = Omnivore.gpx('data/' + this.stage.trackFile, null, null);
     var x = this;

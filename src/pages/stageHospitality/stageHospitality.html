@@ -1,18 +1,19 @@
-<ion-navbar *navbar>
-    <button menuToggle>
-        <ion-icon name="menu"></ion-icon>
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Tab One</ion-title>
-</ion-navbar>
-<ion-content padding>
-    <h3>1. Welcome to Tab One</h3>
-    <p>
-        This starter project for Tabs with Side Menu.
-    </p>
-    <p>
-        Code along and have fun.
-    </p>
-    <p>
-        <button primary menuToggle>Toggle Menu</button>
-    </p>
+    <ion-title>{{stage.name}}</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content class="has-header">
+  <div style="height: 300px; width:100%;">
+    <div id="map" style="height: 100%; width: 100%;"></div>
+  </div>
+
+  <ion-list>        
+      <button ion-item *ngFor="let hospitality of hospitalities" (click)="hospitalitySelected($event, hospitality)">
+        {{hospitality.name}}
+    </button>
+  </ion-list>
 </ion-content>
