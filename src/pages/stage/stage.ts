@@ -5,7 +5,7 @@ import { NavController, NavParams } from 'ionic-angular';
 import {stageDescription} from '../stageDescription/stageDescription';
 import {stageMap} from '../stageMap/stageMap';
 import {stageHospitality} from '../stageHospitality/stageHospitality';
-//import {StageJournal} from '../stageDescription/stageDescription'; 
+import {StageJournal} from '../stage-journal/stage-journal'; 
 
 @Component({
   selector: 'page-stage',
@@ -17,6 +17,7 @@ export class Stage  {
   tabDescription;
   tabHospitality;
   tabMap;
+  tabJournal;
   
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
@@ -24,5 +25,6 @@ export class Stage  {
     this.tabDescription = stageDescription;
     this.tabHospitality = stageHospitality;
     this.tabMap = stageMap;
+    this.tabJournal = StageJournal;
   }
 }

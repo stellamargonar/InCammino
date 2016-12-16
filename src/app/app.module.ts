@@ -6,6 +6,7 @@ import { Stage } from '../pages/stage/stage';
 import { stageDescription } from '../pages/stageDescription/stageDescription';
 import { stageHospitality } from '../pages/stageHospitality/stageHospitality';
 import { stageMap } from '../pages/stageMap/stageMap';
+import { StageJournal } from '../pages/stage-journal/stage-journal';
 import { ChartsModule } from 'ng2-charts/ng2-charts';
 
 
@@ -16,7 +17,8 @@ import { ChartsModule } from 'ng2-charts/ng2-charts';
     Stage,
     stageDescription,
     stageHospitality,
-    stageMap
+    stageMap,
+    StageJournal
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -29,7 +31,8 @@ import { ChartsModule } from 'ng2-charts/ng2-charts';
     Stage,
     stageDescription,
     stageHospitality,
-    stageMap
+    stageMap,
+    StageJournal
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })

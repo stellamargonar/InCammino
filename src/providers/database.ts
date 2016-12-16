@@ -11,8 +11,16 @@ export class Database {
   constructor() {
     this._db = new PouchDB('journal', { adapter: 'websql' });
   }
+
   addJournal (journal) {
     return this._db.post(journal); 
+  }
+
+  updateJournal(journal) {
+      return this._db.put(journal);
+  }
+  deleteJournal(journal) {
+      return this._db.remove(journal);
   }
 
   getAll() {  
@@ -39,8 +47,9 @@ export class Database {
   
 
   getJournal(stageId: number) {
-    
-    
+    return this._db.get(stageId).then(doc => {
+        return doc
+    });
   }
 
 

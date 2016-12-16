@@ -8,15 +8,16 @@ import { Database } from '../../providers/database'
 export class stageDescription {
 
   stage : any;
-  journal : any;
+  journal : any = {};
 
   constructor(public navParams: NavParams, private database: Database) {
     this.stage = navParams.data;
     this.loadJournal();
   }
   loadJournal () {
-    this.database.getAll().then( (data) => {
-       this.journal = data ; console.log('JOURNAL', this.journal);
-    });
+    this.database.getJournal(this.stage.code).then( 
+      doc => {this.journal = doc; console.log(doc);} , 
+      error => {}
+    );
   }
 }

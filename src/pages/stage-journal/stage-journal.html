@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{stage.name}}</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="toggleEdit()">
+        <ion-icon name="edit"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="hasHeader">
+  <div *ngIf="edit">
+    <ion-list inset >
+      <ion-item>
+        <ion-label floating>Journal</ion-label>
+        <ion-textarea [(ngModel)]="journal.text" rows="10" ></ion-textarea>
+      </ion-item>
+    </ion-list>
+    <button class="button button-block button-positive" (click)="saveJournal()">Save</button>
+  </div>
+  <div class="card" *ngIf="!edit">
+    <div class="item item-text-wrap">{{journal.text}}</div>
+  </div>
+</ion-content>
