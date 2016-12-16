@@ -1,50 +1,75 @@
 import { Injectable } from '@angular/core';
-import { SQLite } from 'ionic-native';
+import * as PouchDB from 'pouchdb';
 import 'rxjs/add/operator/map';
 
-const DB_NAME: string = 'incammino';
-const win: any = window;
-
-/* https://gist.github.com/aggarwalankush/0b700328e797e22a1d9994cb35afdf09 */
+/* http://gonehybrid.com/how-to-use-pouchdb-sqlite-for-local-storage-in-ionic-2/ */
 
 @Injectable()
 export class Database {
-  private storage: SQLite;
-  private isOpen: boolean;
-
+  private _db: any;
+  private _journals : any;
   constructor() {
-    if(!this.isOpen) {
-      this.storage = new SQLite();
-      this.storage.openDatabase({name: DB_NAME, location: "default"}).then(this._tryInit);        
+    this._db = new PouchDB('journal', { adapter: 'websql' });
+  }
+  addJournal (journal) {
+    return this._db.post(journal); 
+  }
+
+  getAll() {  
+    if (!this._journals) {
+        return this._db.allDocs({ include_docs: true})
+            .then(docs => {
+
+                // Each row has a .doc object and we just want to send an 
+                // array of birthday objects back to the calling controller,
+                // so let's map the array to contain just the .doc objects.
+                this._journals = docs.rows;
+
+                // Listen for changes on the database.
+                this._db.changes({ live: true, since: 'now', include_docs: true})
+                    .on('change', this.onDatabaseChange);
+
+                return this._journals;
+            });
+    } else {
+        // Return cached data as a promise
+        return Promise.resolve(this._journals);
     }
   }
-
-  // Initialize the DB with our required tables
-  _tryInit() {
-    this.storage.executeSql("CREATE TABLE IF NOT EXISTS journal (id INTEGER PRIMARY KEY AUTOINCREMENT, text TEXT)", []);
-    this.isOpen = true;
-    // this.query('CREATE TABLE IF NOT EXISTS kv (key text primary key, value text)').catch(err => {
-    //   console.error('Storage: Unable to create initial storage tables', err.tx, err.err);
-    // });
-  }
+  
 
   getJournal(stageId: number) {
-    return new Promise((resolve, reject) => {
-      var sql = 'SELECT * FROM journal WHERE id = ?';
-      return this.storage.executeSql(sql, [stageId]).then(data => {
-        var journal = {};
-        if (data.res.rows.length > 0) {
-          var result = data.res.rows.item(0).value;
-          journal = {
-            id: result.id,
-            text : result.text
-          }; 
-        }
-        resolve(journal);
-      }, (error) => {reject(error);});
-    });
-  
+    
     
   }
+
+
+  private onDatabaseChange = (change) => {  
+    var index = this.findIndex(this._journals, change.id);
+    var birthday = this._journals[index];
+
+    if (change.deleted) {
+        if (birthday) {
+            this._journals.splice(index, 1); // delete
+        }
+    } else {
+        change.doc.Date = new Date(change.doc.Date);
+        if (birthday && birthday._id === change.id) {
+            this._journals[index] = change.doc; // update
+        } else {
+            this._journals.splice(index, 0, change.doc) // insert
+        }
+    }
+  }
+  // Binary search, the array is by default sorted by _id.
+  private findIndex(array, id) {  
+      var low = 0, high = array.length, mid;
+      while (low < high) {
+      mid = (low + high) >>> 1;
+      array[mid]._id < id ? low = mid + 1 : high = mid
+      }
+      return low;
+  }
+
 
 }
