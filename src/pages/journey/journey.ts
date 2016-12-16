@@ -1,8 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import {Http, Response} from '@angular/http';
-
 import { NavController, NavParams } from 'ionic-angular';
-
 import { Stage } from '../../pages/stage/stage'
 
 @Component({

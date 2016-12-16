@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 import { NavParams } from 'ionic-angular';
+import { Database } from '../../providers/database/database';
 
 @Component({  
     selector: 'page-stage-description',
@@ -8,9 +9,15 @@ import { NavParams } from 'ionic-angular';
 })
 export class stageDescription {
 
-  stage : {};
+  stage : any;
+  journal : any;
 
-  constructor(public navParams: NavParams) {
+  constructor(public navParams: NavParams, private database: Database) {
     this.stage = navParams.data;
+  }
+  loadJournal () {
+    this.database.getJournal(this.stage['id']).then( (data) => {
+       this.journal = data ; console.log('JOURNAL', this.journal);
+    });
   }
 }

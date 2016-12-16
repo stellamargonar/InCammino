@@ -1,11 +1,13 @@
 import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
+import { Database } from './providers/database/database';
 
 import { Journey } from '../pages/journey/journey';
 
 
 @Component({
+  providers: [Database],
   templateUrl: 'app.html'
 })
 export class MyApp {
