@@ -9,7 +9,8 @@ export class Database {
   private _db: any;
   private _journals : any;
   constructor() {
-    this._db = new PouchDB('journal', { adapter: 'websql' });
+    this._db = new PouchDB('incammino', { adapter: 'websql' });
+    window['PouchDB'] = PouchDB;
   }
 
   addJournal (journal) {

@@ -7,10 +7,10 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content>
-    <ion-list>
-        <button ion-item *ngFor="let stage of stages" (click)="stageSelected($event, stage)">
-           {{stage.code}} : {{stage.name}}
-        </button>
-    </ion-list>
+<ion-content class="card-background-page">
+ <ion-card *ngFor="let stage of stages" (click)="stageSelected($event, stage)">
+    <div class="layer"><img src="{{stage.img}}" /><span></span></div>
+    <div class="card-title">{{stage.name}}</div>
+    <div class="card-subtitle">{{stage.totalLength}} lm</div>
+  </ion-card>
 </ion-content>

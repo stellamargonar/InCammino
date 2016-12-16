@@ -7,7 +7,21 @@
   </ion-navbar>
 </ion-header>
 <ion-content padding class="has-header">
-  <h3>{{stage.code}} : {{stage.name}}</h3>
-  <p>{{stage.description}}</p>
-  <p>{{journal.text}}</p>
+  <img src="{{img}}" *ngFor="let img of journal.img" />
+  <ion-card *ngIf="journal.text">
+    <ion-card-content>
+      {{journal.text}}
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <img src="{{img}}" *ngFor="let img of stage.img" />
+    <ion-card-header>
+      Description
+    </ion-card-header>
+    <ion-card-content>
+      {{stage.description}}
+    </ion-card-content>
+  </ion-card>
+
 </ion-content>

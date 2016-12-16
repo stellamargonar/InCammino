@@ -13,16 +13,34 @@
 </ion-header>
 
 <ion-content padding class="hasHeader">
-  <div *ngIf="edit">
-    <ion-list inset >
-      <ion-item>
-        <ion-label floating>Journal</ion-label>
-        <ion-textarea [(ngModel)]="journal.text" rows="10" ></ion-textarea>
-      </ion-item>
-    </ion-list>
-    <button class="button button-block button-positive" (click)="saveJournal()">Save</button>
+  <div *ngIf="journal.text">
+  <ion-card  *ngFor="let testo of journal.text; let i=index;" (press)="onCardPressed(i)">
+    <ion-card-content>
+      <ion-datetime small end displayFormat="DD/MM/YYYY" [(ngModel)]="testo.date" disabled="true"></ion-datetime>
+
+      {{testo.text}}
+    </ion-card-content>
+  </ion-card>
   </div>
-  <div class="card" *ngIf="!edit">
-    <div class="item item-text-wrap">{{journal.text}}</div>
-  </div>
+
+  <!-- ADD TEXT -->
+  <ion-card *ngIf="edit">
+    <ion-card-content>
+      <ion-textarea [(ngModel)]="tmpText" rows="4"></ion-textarea>
+    </ion-card-content>
+    <ion-row>
+      <ion-col><button ion-button block clear>Cancel</button></ion-col>
+      <ion-col><button ion-button block clear (click)="addText()">Save</button></ion-col>
+    </ion-row>
+  </ion-card>
+
+
+  <ion-fab right bottom>
+    <button ion-fab color="default"><ion-icon name="add"></ion-icon></button>
+    <ion-fab-list side="top">
+      <button ion-fab (click)="toggleEdit()"><ion-icon name="text"></ion-icon></button>
+      <button ion-fab><ion-icon name="image"></ion-icon></button>
+    </ion-fab-list>
+  </ion-fab>
+
 </ion-content>
