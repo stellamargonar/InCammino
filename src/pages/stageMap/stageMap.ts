@@ -75,12 +75,18 @@ export class stageMap {
         elevation: currentElevation
       };
     }
-    this.lineChartData = [{data: elevationData, pointRadius	: 0}];
+    this.lineChartData = [{
+      data: elevationData, 
+      pointRadius	: 0, 
+      fill: true, 
+      borderColor : 'rgb(56, 126, 245)', 
+      backgroundColor: 'rgba(56, 126, 245, 0.4)'
+    }];
 
     this.stage.technicalData = {
-      totalLength : previous.distance,
-      maxElevation: maxElevation,
-      dislivello : dislivello
+      totalLength : Math.round(previous.distance * 100) / 100,
+      maxElevation: Math.round(maxElevation),
+      dislivello : Math.round(dislivello)
     };
   }
   _computeDistance(cord1, cord2) {

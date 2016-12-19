@@ -7,20 +7,31 @@
   </ion-navbar>
 </ion-header>
 <ion-content class="has-header">
-  <div padding style="display: block;" *ngIf="lineChartData">
-    <canvas baseChart height="150px"
-                [datasets]="lineChartData"
-                [options]="lineChartOptions"
-                [chartType]="'line'"></canvas>
+  <ion-card *ngIf="stage.technicalData" primary>
+    <ion-card-header>Dati Tecnici</ion-card-header>
+    <ion-list>
+      <ion-item>
+        <ion-icon name="compass" item-left></ion-icon>
+        <h2>{{stage.technicalData.totalLength}} km</h2>
+        <p>Lunghezza totale</p>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="trending-up" item-left></ion-icon>
+        <h2>{{stage.technicalData.dislivello}} m</h2>
+        <p>Dislivello totale</p>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="arrow-up" item-left></ion-icon>
+        <h2>{{stage.technicalData.maxElevation}} m</h2>
+        <p>Altitudine massima</p>
+      </ion-item>
+    </ion-list>
 
-  </div>
-
-  <ul *ngIf="stage.technicalData">
-    <li>Total Distance: {{stage.technicalData.totalLength}}</li>
-    <li>Total Elevation: {{stage.technicalData.dislivello}}</li>
-    <li>Max Elevation: {{stage.technicalData.maxElevation}}</li>
-  </ul>
-  <div style="height: 100px; width:100%;">
+    <div padding style="display: block;" *ngIf="lineChartData">
+      <canvas baseChart height="150px" [datasets]="lineChartData" [options]="lineChartOptions" [chartType]="'line'"></canvas>
+    </div>
+  </ion-card>
+  <div style="height: 300px; width:100%;">
     <div id="map" style="height: 100%; width: 100%;"></div>
   </div>
 </ion-content>

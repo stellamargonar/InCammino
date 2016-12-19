@@ -22,7 +22,7 @@ export class stageHospitality {
     this.loadHospitality();
   }
   loadMap() {
-    this._map = L.map("map").setView([0,0] ,13);
+    this._map = L.map("hospitality_map").setView([0,0] ,13);
     var OpenStreetMap_Mapnik = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 19,
       attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'

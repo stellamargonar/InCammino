@@ -7,12 +7,6 @@
   </ion-navbar>
 </ion-header>
 <ion-content padding class="has-header">
-  <img src="{{img}}" *ngFor="let img of journal.img" />
-  <ion-card *ngIf="journal.text">
-    <ion-card-content>
-      {{journal.text}}
-    </ion-card-content>
-  </ion-card>
 
   <ion-card>
     <img src="{{img}}" *ngFor="let img of stage.img" />
@@ -23,5 +17,16 @@
       {{stage.description}}
     </ion-card-content>
   </ion-card>
+
+  <div *ngIf="journal.text">
+    <img src="{{img}}" *ngFor="let img of journal.img" />
+    <ion-card *ngFor="let item of journal.text">
+      <ion-card-content>
+        <ion-datetime small end displayFormat="DD/MM/YYYY" [(ngModel)]="item.date" disabled="true"></ion-datetime>
+
+        {{item.text}}
+      </ion-card-content>
+    </ion-card>
+  </div>
 
 </ion-content>
