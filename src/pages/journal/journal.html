@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Diario del Pellegrino</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="toggleEdit()">
+        <ion-icon name="edit"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="hasHeader">
+  <ion-card  *ngFor="let post of posts; let i=index;" (press)="onCardPressed(i)">
+    <ion-card-content *ngIf="post.text">
+      <ion-datetime small end displayFormat="DD/MM/YYYY" [(ngModel)]="testo.date" disabled="true"></ion-datetime>
+      {{post.text}}
+    </ion-card-content>
+    <ion-card-content *ngIf="post.image">
+      <img [src]="post.image"/>
+    </ion-card-content>
+  </ion-card>
+  </div>
+
+  <!-- ADD TEXT -->
+  <ion-card *ngIf="edit">
+    <ion-card-content>
+      <ion-textarea [(ngModel)]="tmpText" rows="4"></ion-textarea>
+    </ion-card-content>
+    <ion-row>
+      <ion-col><button ion-button block clear>Cancel</button></ion-col>
+      <ion-col><button ion-button block clear (click)="addText()">Save</button></ion-col>
+    </ion-row>
+  </ion-card>
+
+
+  <ion-fab right bottom>
+    <button ion-fab color="default"><ion-icon name="add"></ion-icon></button>
+    <ion-fab-list side="top">
+      <button ion-fab (click)="toggleEdit()"><ion-icon name="text"></ion-icon></button>
+      <button ion-fab (click)="addPicture()"><ion-icon name="image"></ion-icon></button>
+    </ion-fab-list>
+  </ion-fab>
+
+</ion-content>

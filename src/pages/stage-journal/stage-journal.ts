@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavParams, ActionSheetController } from 'ionic-angular';
+import {Camera} from 'ionic-native';
 import { Database } from '../../providers/database';
 
 
@@ -12,6 +13,7 @@ export class StageJournal {
   private stage : any;
   private edit : boolean = false;
   private tmpText: string = '';
+
 
   constructor(public navParams: NavParams, private database: Database, private actionSheetCtrl: ActionSheetController) {
     this.stage = navParams.data;
@@ -59,5 +61,23 @@ export class StageJournal {
     this.journal.date = new Date();
     this.edit = false;
     this.database.updateJournal(this.journal).then( () => this.loadJournal() )    
+  }
+
+  addPicture() {
+    let options = {
+      destinationType   : Camera.DestinationType.DATA_URL,
+      sourceType        : Camera.PictureSourceType.PHOTOLIBRARY
+    };
+
+    Camera.getPicture(options).then (
+      (data)  => {
+        let image = "data:image/jpeg;base64," + data;
+        this.journal.text = this.journal.text || [];
+        this.journal.text.push({image: image, date: new Date()});
+        this.saveJournal();
+      },
+      (error) => {  }
+    );
+
   }
 }

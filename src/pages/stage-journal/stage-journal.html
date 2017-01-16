@@ -15,10 +15,12 @@
 <ion-content padding class="hasHeader">
   <div *ngIf="journal.text">
   <ion-card  *ngFor="let testo of journal.text; let i=index;" (press)="onCardPressed(i)">
-    <ion-card-content>
+    <ion-card-content *ngIf="testo.text">
       <ion-datetime small end displayFormat="DD/MM/YYYY" [(ngModel)]="testo.date" disabled="true"></ion-datetime>
-
       {{testo.text}}
+    </ion-card-content>
+    <ion-card-content *ngIf="testo.image">
+      <img [src]="testo.image" />
     </ion-card-content>
   </ion-card>
   </div>
@@ -39,7 +41,7 @@
     <button ion-fab color="default"><ion-icon name="add"></ion-icon></button>
     <ion-fab-list side="top">
       <button ion-fab (click)="toggleEdit()"><ion-icon name="text"></ion-icon></button>
-      <button ion-fab><ion-icon name="image"></ion-icon></button>
+      <button ion-fab (click)="addPicture()"><ion-icon name="image"></ion-icon></button>
     </ion-fab-list>
   </ion-fab>
 
